@@ -13,7 +13,7 @@ kubectl apply -f pod.yaml
 ## Verify
 
 ```bash
-kubectl get pods
+kubectl get pods -n sre
 ```
 
 ## Delete
