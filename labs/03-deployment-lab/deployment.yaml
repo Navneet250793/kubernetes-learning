@@ -1,16 +1,17 @@
+
 apiVersion: apps/v1
 kind: Deployment
 
 metadata:
- name: nginx-deployment
- namespace: sre
+  name: nginx-deployment
+  namespace: sre
 
 spec:
- replicas: 3
+  replicas: 3
 
- selector:
-  matchLabels:
-    app: nginx
+  selector:
+    matchLabels:
+      app: nginx
 
   template:
     metadata:
@@ -19,7 +20,7 @@ spec:
 
     spec:
       containers:
-       - name: nginx
-         image: nginx
-         ports:
-         - containerPort: 80
+      - name: nginx
+        image: nginx
+        ports:
+        - containerPort: 80
