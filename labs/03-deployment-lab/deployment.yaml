@@ -17,11 +17,10 @@ metadata:
 labels:
 app: nginx
 
-```
+
 spec:
   containers:
   - name: nginx
     image: nginx
     ports:
     - containerPort: 80
-```
