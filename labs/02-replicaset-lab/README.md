@@ -43,3 +43,13 @@ kubectl describe rs nginx-rs -n sre
 ReplicaSet creates and maintains 3 nginx Pods.
 
 If a Pod is deleted, ReplicaSet automatically creates a replacement Pod.
+
+kubectl get rs -n sre
+
+kubectl get pods -n sre
+
+kubectl get pods -n sre --show-labels
+
+kubectl describe rs nginx-rs -n sre
+
+kubectl delete pod <pod-name> -n sre
