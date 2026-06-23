@@ -2,21 +2,20 @@ apiVersion: apps/v1
 kind: Deployment
 
 metadata:
-name: nginx-deployment
-namespace: sre
+ name: nginx-deployment
+ namespace: sre
 
 spec:
-replicas: 3
+ replicas: 3
 
 selector:
-matchLabels:
-app: nginx
+ matchLabels:
+  app: nginx
 
 template:
 metadata:
 labels:
-app: nginx
-
+ app: nginx
 
 spec:
   containers:
