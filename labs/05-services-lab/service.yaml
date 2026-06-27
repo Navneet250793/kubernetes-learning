@@ -6,7 +6,7 @@ metadata:
   namespace: sre
 
 spec:
-  type: ClusterIP
+  type: NordPort
 
   selector:
     app: nginx
