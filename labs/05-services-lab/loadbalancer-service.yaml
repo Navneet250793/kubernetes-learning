@@ -1,0 +1,17 @@
+apiVersion: v1
+kind: Service
+
+metadata:
+  name: nginx-loadbalancer
+  namespace: sre
+
+spec:
+  type: LoadBalancer
+
+  selector:
+    app: nginx
+
+  ports:
+    - protocol: TCP
+      port: 80
+      targetPort: 80
